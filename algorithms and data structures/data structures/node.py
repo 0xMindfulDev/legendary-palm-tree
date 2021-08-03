@@ -2,7 +2,7 @@
 A Node is a record (or a data structure) with two elements - a value and a reference 
 which may point to another node. The point of a node is to represent a value but 
 potentially relate that value to some other value as pointed by the reference. Nodes 
-are building blocks of data structures such as linked lists, graphs and trees.
+are building blocks of data structures such as linked lists, graphs and trees. 
 '''
 
 class Node(object):
