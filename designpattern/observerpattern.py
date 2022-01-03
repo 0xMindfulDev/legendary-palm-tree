@@ -25,7 +25,7 @@ class Observer:
     def notify(self, observable, *args, **kwargs):
         print("Got", args, kwargs, "From", observable)
 
-
-subject = Observable()
-observer = Observer(subject)
-subject.notify_observers("test", kw="python")
+if __name__ == 'main':
+    subject = Observable()
+    observer = Observer(subject)
+    subject.notify_observers("test", kw="python")
