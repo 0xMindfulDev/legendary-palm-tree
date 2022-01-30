@@ -47,7 +47,7 @@ class CreditCard:
         Return True if charge was processed; False if charge was denied.
         """
         # if charge would exceed limit,
-        if price + self. balance > self. limit:
+        if price + self._balance > self._limit:
             return False
         # cannot accept charge
         else:
