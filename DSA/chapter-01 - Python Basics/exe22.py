@@ -4,7 +4,7 @@ an array c of length n such that c[i] = a[i] · b[i], for i = 0, . . . , n − 1
 
 from typing import List
 
-def dot_product(a: List[int], b: List):
+def dot_product(a: List[int], b: List[int]):
 
     if len(a) != len(b):
         raise ValueError("Both lists must of the same length")
