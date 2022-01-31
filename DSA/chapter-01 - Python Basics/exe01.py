@@ -13,6 +13,6 @@ def is_multiple(n: int, m: int) -> bool:
 
 #test function
 if __name__ == '__main__':
-    print(is_multiple(20, 3))
-    print(is_multiple(21, 3))
-    print(is_multiple(77, 7))
+    print(is_multiple(20, 3)) #False
+    print(is_multiple(21, 3)) #True
+    print(is_multiple(77, 7)) #True
