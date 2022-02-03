@@ -24,6 +24,7 @@ class Polygon(object):
 class Triangle(Polygon):
     """Triangle class representing a triangle object. A concrete implementation 
     of polygon class with three sides."""
+    def __init__(self, side: int) -> None:...
 
 class Quadrilateral(Polygon):
     """A quadrilateral is a Polygon with four sides"""
