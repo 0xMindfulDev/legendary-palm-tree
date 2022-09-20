@@ -17,9 +17,19 @@ def is_even(k: int) -> bool:
 
     return even
 
-
+#using bitwise operator
+def is_even2(k: int) -> bool:
+    """
+    takes advantage of the fact that the last bit of an
+    even number is always 0.
+    """
+    # return not (k & 1)
+    return (k & 1) == 0 #more readable
 
 # test code
 if __name__ == '__main__':
     print(is_even(20))
     print(is_even(11))
+
+    print(is_even2(20))
+    print(is_even2(11))
