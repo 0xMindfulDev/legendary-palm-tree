@@ -7,4 +7,19 @@ def is_even(k: int) -> bool:
     """
     function to determin if a given integer k is even
     """
-    return 
+    even = True
+    for i in range(1,k+1):
+        if even == True:
+            even = False
+        else:
+            even = True
+
+
+    return even
+
+
+
+# test code
+if __name__ == '__main__':
+    print(is_even(20))
+    print(is_even(11))
