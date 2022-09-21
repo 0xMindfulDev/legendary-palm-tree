@@ -8,15 +8,16 @@ from typing import List, Tuple
 def minmax(data: List) -> Tuple:
 
     _min, _max = data[0], data[0]
-    for i in data:
-        if i < _min:
-            _min = i
-        if i > _max:
-            _max = i
+    for num in data:
+        if num < _min:
+            _min = num
+        if num > _max:
+            _max = num
 
-        return _min, _max
+    return _min, _max
 
 
 #test function
 if __name__ == '__main__':
     print(minmax([1,2,4,5,-6,2,45]))
+    print(minmax([1,2,3,4,5]))
