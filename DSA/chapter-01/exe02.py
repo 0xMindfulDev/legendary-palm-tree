@@ -9,7 +9,7 @@ def is_even(k: int) -> bool:
     """
     even = True
     for i in range(1,k+1):
-        if even == True:
+        if even:
             even = False
         else:
             even = True

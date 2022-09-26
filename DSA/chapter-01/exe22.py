@@ -14,13 +14,21 @@ def dot_product(a: List[int], b: List[int]):
         c.append((a[i]*b[i]))
     return c
 
+# use list comprehension
+def dot_product2(a: List[int], b: List[int]) -> List[int]:
+    if len(a) != len(b):
+        raise ValueError("Both lists must be of same length")
+
+    return [a[i]*b[i] for i in range(len(a))]
+
 
 #test program
 if __name__ == "__main__":
     l1 = [1,2,3]
     l2 = [1,2,3]
     print(dot_product(l1, l2))
+    print(dot_product2(l1, l2))
 
     c1 = [2,4,6]
     c2 = [1,2,3,4]
-    print(dot_product(c1, c2))  #raises Error.
+    #print(dot_product(c1, c2))  #raises Error.
